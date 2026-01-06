@@ -1,4 +1,5 @@
 \documentclass{article}
+\renewcommand{\baselinestretch}{1.5}
 
 \usepackage{setspace}
 \usepackage{microtype}
@@ -16,6 +17,7 @@
 
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{ref.bib}
+\nocite{*}
 
 \hypersetup{
     breaklinks, % allow line breaks in links
@@ -34,8 +36,15 @@
 
 \begin{document}
 \maketitle
-\include{abstract}
+\input{abstract}
 \newpage
 \tableofcontents
 \newpage
+\include{introduction}
+\include{data}
+\include{methodology}
+\include{results}
+\include{remarks}
+
+\printbibliography[title={Bibliography}]
 \end{document}
