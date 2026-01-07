@@ -1,3 +1,29 @@
 \section{Methodology}\label{sec:methodology}
 
-\subsection{Evaluation of Equality in Productivity Indicators}
+All hypotheses of this study concern the possibility of difference in distributions of labor productivity among exporters and non-exporters.
+Having access to quantile level granularity on a time series basis creates the opportunity to assess the exporter/non-exporter differences in each productivity bracket ($Q_i$) separately.
+To transform this data into steps that will allow us to test out hypotheses, we outlined 3 major steps:
+
+\begin{enumerate}
+    \item Isolating Empirical Distributions
+    \item Building the Equality Tests
+    \item Analysis and Interpretation
+\end{enumerate}
+
+\subsection{Empirical Distributions}\label{subsec:empirical_distributions}
+By filtering the dataset, we can create the empirical distributions of productivity brackets to show how each quantile of productivity evolves over time.
+For any subset of segmentations (e.g., Size Band = Small, Age Band = New), we observe two samples $\lbrace{X_{EXP}, X_{NEXP}}\rbrace$ for each productivity quantile $Q_i$.
+Both sources combined, each categorical group produces $N_{EXP} = N_{NEXP} = 30$ observations.\footnote{30 observations assuming all data for all years are available. This is not always the case.}
+
+\vspace{\baselineskip}
+
+\noindent Using this filtering method the following distributions will be built:
+\begin{itemize}
+    \item Quantile distributions of Exporters/Non-Exporters without categorical filtering.
+    \item Quantile distributions of Foreign and Domestic owned Exporters/Non-Exporters.
+    \item Distribution of Median ($Q_{50}$) Productivity for Exporters/Non-Exporters by Size Band.
+\end{itemize}
+\noindent \textbf{NOTE: } \enquote{Quantile distribution} refers to the comparison of each quantile $Q_i$ separately over time between Exporters and Non-Exporters. (i.e. $Q_{[i, \ 2005:2022]} \forall Q_i \in \hat{Q}$ for Exporters vs. Non-Exporters)
+
+\subsection{Equality Tests}\label{subsec:equality_tests}
+Having built the empirical distributions, we can compare their equality using the two-sample \textbf{Kolmogorov-Smirnov (KS)} test.\footnote{Refer to Section~\ref{subsec:ks_remarks} for furter discussion regarding the KS test assumptions and how they interact with our data.}
