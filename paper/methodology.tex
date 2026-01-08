@@ -1,6 +1,6 @@
 \section{Methodology}\label{sec:methodology}
 
-All hypotheses of this study concern the possibility of difference in distributions of labor productivity among exporters and non-exporters.
+\noindent All hypotheses of this study concern the possibility of difference in distributions of labor productivity among exporters and non-exporters.
 Having access to quantile level granularity on a time series basis creates the opportunity to assess the exporter/non-exporter differences in each productivity bracket ($Q_i$) separately.
 To transform this data into insightful outcomes, we outlined 3 major steps to construct our empirical analysis:
 
@@ -11,7 +11,7 @@ To transform this data into insightful outcomes, we outlined 3 major steps to co
 \end{enumerate}
 
 \subsection{Empirical Distributions}\label{subsec:empirical_distributions}
-By filtering the dataset, we can create the empirical distributions of productivity brackets to show how each quantile of productivity evolves over time.
+\noindent By filtering the dataset, we can create the empirical distributions of productivity brackets to show how each quantile of productivity evolves over time.
 For any subset of segmentations (e.g., Size Band = Small, Age Band = New), we observe two samples $\lbrace{X_{EXP}, X_{NEXP}}\rbrace$ for each productivity quantile $Q_i$.
 Both sources combined, each categorical group produces $N_{EXP} = N_{NEXP} = 30$ observations.\footnote{30 observations assuming all data for all years are available. This is not always the case. Refer to Appendix~\ref{subsec:a1_counts} and~\ref{subsec:a2_empirical} for a detailed outlook on the missing data points.}
 
@@ -26,16 +26,16 @@ Both sources combined, each categorical group produces $N_{EXP} = N_{NEXP} = 30$
 \noindent \textbf{NOTE: } \enquote{Quantile distribution} refers to the comparison of each quantile $Q_i$ separately over time between Exporters and Non-Exporters. (i.e. $Q_{[i, \ 2005:2022]} \forall Q_i \in \hat{Q}$ for Exporters vs. Non-Exporters)
 
 \subsection{Equality Tests}\label{subsec:equality_tests}
-Having built the empirical distributions, we can compare their equality using the two-sample \textbf{Kolmogorov-Smirnov (KS)} test.\footnote{Refer to Section~\ref{subsec:ks_remarks} for further discussion regarding the KS test assumptions and how they interact with our data.}
+\noindent Having built the empirical distributions, we can compare their equality using the two-sample \textbf{Kolmogorov-Smirnov (KS)} test.\footnote{Refer to Section~\ref{subsec:ks_remarks} for further discussion regarding the KS test assumptions and how they interact with our data.}
 The KS test utilizes a simple statistic $D = \sup_x | F_i(x) - F_j(x) |$ to measure the maximum distance between two empirical CDFs.
 By the outcomes of each KS test, we can conclude that the tested samples \enquote{share} the same distribution.
 
 \subsection{Analysis and Interpretation}\label{subsec:analysis_interpretation}
-Applying the KS test to all constructed empirical distributions will yield a series of $p$-values.
+\noindent Applying the KS test to all constructed empirical distributions will yield a series of $p$-values.
 By analyzing these $p$-values, we can accept or reject the null hypothesis of equality of distributions for each productivity quantile and categorical segmentation; potentially allowing us to discover empirical quirks that contradict the Melitz framework.
 Of course, it is important to note that any such discoveries will be confined to the surveyed portion of the UK economy and our paper does not aim to challenge the Meliz expectations at a theoretical level if such findings occur.
 
 \vspace{\baselineskip}
 
-With the specific set of hypotheses being tested, we expect to see sub-segmentations where exporters' and non-exporters' sample distributions are statistically indifferent.
+\noindent With the specific set of hypotheses being tested, we expect to see sub-segmentations where exporters' and non-exporters' sample distributions are statistically indifferent.
 Therefore, a stricter, two-sided equality test is preferred. We accept the assumption that Exporters have greater productivity where a significant difference of distributions is observed.\footnote{We will numerically display that Exporters have greater productivity in these cases, but we will not provide a robust and statistically supported proof.}

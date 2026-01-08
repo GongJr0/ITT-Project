@@ -1,6 +1,6 @@
 \section{Results}\label{sec:results}
 
-The first course of action is the verification of \hyperref[hyp]{H1}.
+\noindent The first course of action is the verification of \hyperref[hyp]{H1}.
 Therefore, we compare the aGVA observations of all quantile levels for exporters and non-exporters.
 
 \begin{table}[H]
@@ -25,7 +25,7 @@ However, seeing a significant difference with all categories included does not g
 
 \vspace{\baselineskip}
 
-We then explore the productivity differences between domestic and foreign-owned (not necessarily multinational) firms' export status.
+\noindent We then explore the productivity differences between domestic and foreign-owned (not necessarily multinational) firms' export status.
 For all quantiles, foreign/domestic owned exporters and non-exporters are compared for equality.
 \begin{table}[H]
     \centering
@@ -40,7 +40,7 @@ In the UK data, we can therefore conclude that foreign-owned companies at the up
 
 \vspace{\baselineskip}
 
-Finally, we test \hyperref[hyp]{H3} by comparing exporters/non-exporters of each size band at all quantile levels.
+\noindent Finally, we test \hyperref[hyp]{H3} by comparing exporters/non-exporters of each size band at all quantile levels.
 Under H3, we expect to see larger $p$-values as we move towards larger size bands and higher quantile brackets.
 
 \begin{table}[H]
@@ -48,14 +48,17 @@ Under H3, we expect to see larger $p$-values as we move towards larger size band
     \textbf{p-values for Exporters vs. Non-Exporters by Size Band}
     \input{python_tabular/sizeband_exp_nexp}
     \caption{KS Test Results: Exporters vs. Non-Exporters by Size Band}
+    \label{tab:ks_sizeband_exp_nexp}
 \end{table}
+{\footnotesize $^*$ Both samples being compared have a small sample size ($n_i = n_j = 20$). The $p$-value is included but should not be treated as accurate. Refer to the raw observations in Appendix~\ref{subsec:a2_empirical}. Visual observation aligns with the test results but the $p$-values themselves are unconfirmable.}
+\vspace{0.5\baselineskip}
 
 \noindent Contrary to our expectations, we saw a strict and strong rejection in all sizes and quantile levels.
 This shows that the positive relationship between export status and labor productivity is persistent across all sizes of firms in the UK market.
 
 \vspace{\baselineskip}
-Seeing the result of the H3 tests, we further explored the relationship between size and productivity within each export status.
-We compared the size bands within exporters and non-exporters separately to see if growth in size leads to statistically significant increases in productivity.
+\noindent Seeing the result of the H3 tests, we further explored the relationship between size and productivity within each export status.
+We compared the median ($Q_{50}$) of size bands within exporters and non-exporters separately to see if growth in size leads to statistically significant increases in productivity.
 
 \begin{table}[H]
     \small
@@ -71,6 +74,8 @@ We compared the size bands within exporters and non-exporters separately to see 
     \input{python_tabular/sizeband_nexp_sizecomp}
     \caption{KS Test Results: Size Band Comparisons within Exporters and Non-Exporters.}
 \end{table}
-{\tiny $^*$ Both samples being compared have small sample sizez (< 20). The $p$-value is included but should not be treated as accurate.}
+{\footnotesize Refer to the footnote on Table~\ref{tab:ks_sizeband_exp_nexp} regarding $p$-values marked with $^*$.}
+\vspace{0.5\baselineskip}
 
-\noindent We observe that most size combinations lead to a rejection
+\noindent We observe that most size combinations lead to a rejection.
+However, both exporters and non-exporters display some size bands that do not exhibit statistically significant productivity differences.
