@@ -47,12 +47,11 @@ Under H3, we expect to see larger $p$-values as we move towards larger size band
     \centering
     \textbf{p-values for Exporters vs. Non-Exporters by Size Band}
     \input{python_tabular/sizeband_exp_nexp}
+    
+    {\noindent\RaggedRight\footnotesize $^*$ Both samples being compared have a small sample size ($n_i = n_j = 20$). The $p$-value is included but should not be treated as accurate. Refer to the raw observations in Appendix~\ref{subsec:a2_empirical}. Visual observation aligns with the test results but the $p$-values themselves are unconfirmable.}
     \caption{KS Test Results: Exporters vs. Non-Exporters by Size Band}
     \label{tab:ks_sizeband_exp_nexp}
 \end{table}
-{\footnotesize $^*$ Both samples being compared have a small sample size ($n_i = n_j = 20$). The $p$-value is included but should not be treated as accurate. Refer to the raw observations in Appendix~\ref{subsec:a2_empirical}. Visual observation aligns with the test results but the $p$-values themselves are unconfirmable.}
-\vspace{0.5\baselineskip}
-
 \noindent Contrary to our expectations, we saw a strict and strong rejection in all sizes and quantile levels.
 This shows that the positive relationship between export status and labor productivity is persistent across all sizes of firms in the UK market.
 
@@ -72,10 +71,11 @@ We compared the median ($Q_{50}$) of size bands within exporters and non-exporte
     \centering
     \textbf{p-values for Size Band Comparisons within Non-Exporters}
     \input{python_tabular/sizeband_nexp_sizecomp}
+
+    {\noindent\RaggedRight\footnotesize $^*$ Refer to the footnote on Table~\ref{tab:ks_sizeband_exp_nexp} regarding $p$-values marked with \enquote{$*$}.}
     \caption{KS Test Results: Size Band Comparisons within Exporters and Non-Exporters.}
 \end{table}
-{\footnotesize Refer to the footnote on Table~\ref{tab:ks_sizeband_exp_nexp} regarding $p$-values marked with $^*$.}
-\vspace{0.5\baselineskip}
 
 \noindent We observe that most size combinations lead to a rejection.
 However, both exporters and non-exporters display some size bands that do not exhibit statistically significant productivity differences.
+Specifically we see that the Small-Medium pair in exporters show similar productivity distributions while the Micro-Large, Micro-Small, and Small-Large pairs in non-exporters do not exhibit significant differences.

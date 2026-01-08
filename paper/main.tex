@@ -1,5 +1,10 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{14}{16}\selectfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\fontsize{12}{14}\selectfont\bfseries}{\thesubsection}{1em}{}
+
+\usepackage[document]{ragged2e}
 \usepackage{setspace}
 \usepackage{microtype}
 \usepackage{siunitx}
@@ -21,10 +26,10 @@
 \nocite{*}
 
 \hypersetup{
-    breaklinks, % allow line breaks in links
-    colorlinks, % allow colors for links
-    allcolors=black, % disable obnoxious colors for \ref, \cite, etc. (optional)
-    urlcolor=blue, % choose color for \url (default)
+    breaklinks,
+    colorlinks,
+    allcolors=black,
+    urlcolor=blue,
 }
 
 \title{\includegraphics[width=\textwidth]{fig/logo}\\[2cm]\textbf{Export and Productivity: Distributional Equality Analysis}}
@@ -34,26 +39,6 @@
     Cem Köymen \\ Index No. 465765 \\ \href{mailto:c.koymen@student.uw.edu.pl}{c.koymen@student.uw.edu.pl}
     }
 \date{\today}
-
-% Table Template
-%
-% \begin{table}[H]
-%     \centering
-%     \label{fig:ks_table}
-%     \textbf{Exporters vs. Non-Exporters Productivity Distributions by Size Category}
-%     \begin{tabular}{lccc}
-%         \toprule
-%         \textbf{P} & \textbf{Small (10–49)} & \textbf{Medium (50–249)} & \textbf{Large (250+)} \\
-%         \midrule
-%         \textbf{$Q_{10}$} & $\approx 0$ & 0.234 & 0.345 \\
-%         \textbf{$Q_{25}$} & 0.223 & 0.334 & 0.445 \\
-%         \textbf{$Q_{50}$} & 0.323 & 0.434 & 0.545 \\
-%         \textbf{$Q_{75}$} & 0.423 & 0.534 & 0.645 \\
-%         \textbf{$Q_{90}$} & 0.523 & 0.634 & 0.745 \\
-%         \bottomrule
-%     \end{tabular}
-%     \caption{Table 1: KS test p-values.}
-% \end{table}
 
 \begin{document}
     \maketitle
