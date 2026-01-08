@@ -5,7 +5,9 @@ Therefore, we compare the aGVA observations of all quantile levels for exporters
 
 \begin{table}[H]
     \centering
+    \fontsize{11}{11}\selectfont
     \label{fig:ks_table_all_firms}
+    \textbf{KS Test Results for Exporters vs. Non-Exporters (All Firms)}
     \begin{tabular}{lcc}
         \toprule
         $Q_i$ & $p$-value & Equality Conclusion \\
@@ -29,9 +31,11 @@ However, seeing a significant difference with all categories included does not g
 For all quantiles, foreign/domestic owned exporters and non-exporters are compared for equality.
 \begin{table}[H]
     \centering
+    \fontsize{11}{11}\selectfont
+
     \textbf{p-values for Exporters vs. Non-Exporters by Ownership Type}
     \input{python_tabular/ownership_exp_nexp}
-    \caption{KS Test Results: Exporters vs. Non-Exporters by Ownership Type}
+    \caption{Exporters vs. Non-Exporters by Ownership Type}
 \end{table}
 
 \noindent Although most tests result in a strong rejection, we see an interesting result in the foreign-owned firms.
@@ -45,11 +49,13 @@ Under H3, we expect to see larger $p$-values as we move towards larger size band
 
 \begin{table}[H]
     \centering
+    \fontsize{11}{5}\selectfont
+
     \textbf{p-values for Exporters vs. Non-Exporters by Size Band}
     \input{python_tabular/sizeband_exp_nexp}
     
     {\noindent\RaggedRight\footnotesize $^*$ Both samples being compared have a small sample size ($n_i = n_j = 20$). The $p$-value is included but should not be treated as accurate. Refer to the raw observations in Appendix~\ref{subsec:a2_empirical}. Visual observation aligns with the test results but the $p$-values themselves are unconfirmable.}
-    \caption{KS Test Results: Exporters vs. Non-Exporters by Size Band}
+    \caption{Exporters vs. Non-Exporters by Size Band}
     \label{tab:ks_sizeband_exp_nexp}
 \end{table}
 \noindent Contrary to our expectations, we saw a strict and strong rejection in all sizes and quantile levels.
@@ -62,6 +68,8 @@ We compared the median ($Q_{50}$) of size bands within exporters and non-exporte
 \begin{table}[H]
     \small
     \centering
+    \fontsize{11}{5}\selectfont
+
     \textbf{p-values for Size Band Comparisons within Exporters}
     \input{python_tabular/sizeband_exp_sizecomp}
 \end{table}
@@ -69,11 +77,13 @@ We compared the median ($Q_{50}$) of size bands within exporters and non-exporte
 \begin{table}[H]
     \small
     \centering
+    \fontsize{11}{5}\selectfont
+
     \textbf{p-values for Size Band Comparisons within Non-Exporters}
     \input{python_tabular/sizeband_nexp_sizecomp}
 
     {\noindent\RaggedRight\footnotesize $^*$ Refer to the footnote on Table~\ref{tab:ks_sizeband_exp_nexp} regarding $p$-values marked with \enquote{$*$}.}
-    \caption{KS Test Results: Size Band Comparisons within Exporters and Non-Exporters.}
+    \caption{Size Band Comparisons within Exporters and Non-Exporters.}
 \end{table}
 
 \noindent We observe that most size combinations lead to a rejection.

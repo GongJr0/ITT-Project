@@ -19,12 +19,11 @@ Both sources combined, each categorical group produces $N_{EXP} = N_{NEXP} = 30$
 
 \noindent Using this filtering method the following distributions will be built:
 \begin{itemize}
-    \item Quantile distributions of Exporters/Non-Exporters without categorical filtering.
+    \item Quantile distributions of Exporters/Non-Exporters without filtering.
     \item Quantile distributions of Foreign and Domestic owned Exporters/Non-Exporters.
     \item Distribution of Median ($Q_{50}$) Productivity for Exporters/Non-Exporters by Size Band.
 \end{itemize}
-\noindent \textbf{NOTE: } \enquote{Quantile distribution} refers to the comparison of each quantile $Q_i$ separately over time between Exporters and Non-Exporters. (i.e. $Q_{[i, \ 2005:2022]} \forall Q_i \in \hat{Q}$ for Exporters vs. Non-Exporters)
-
+{\noindent\small\textbf{NOTE: } \enquote{Quantile distribution} refers to the comparison of each quantile $Q_i$ separately over time between Exporters and Non-Exporters. (i.e. $Q_{[i, \ 2005:2022]} \forall Q_i \in \hat{Q}$)}
 \subsection{Equality Tests}\label{subsec:equality_tests}
 \noindent Having built the empirical distributions, we can compare their equality using the two-sample \textbf{Kolmogorov-Smirnov (KS)} test.\footnote{Refer to Section~\ref{subsec:ks_remarks} for further discussion regarding the KS test assumptions and how they interact with our data.}
 The KS test utilizes a simple statistic $D = \sup_x | F_i(x) - F_j(x) |$ to measure the maximum distance between two empirical CDFs.
